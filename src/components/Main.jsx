@@ -3,6 +3,7 @@ import Constants from "expo-constants"
 import RepositoryList from "./RepositoryList";
 import {Routes,Route, Navigate} from "react-router-native"
 import AppBar from "./AppBar";
+import Login from "../pages/Login";
 
 
 const styles = StyleSheet.create({
@@ -19,7 +20,7 @@ const Main = () => {
 
             <Routes>
                 <Route path='/' element={<RepositoryList />} />
-                <Route path='/signin' element={<Text>Sign In</Text>} />
+                <Route path='/signin' element={<Login/>} />
                 <Route path='*' element={<Navigate to='/' />} />
             </Routes>
 
